@@ -1,0 +1,95 @@
+@use '../../styles/variables' as *;
+
+.header {
+  &__content {
+    background: url('../../assets/header/bg.png');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    min-height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__logo{
+    padding-left: 20px;
+  }
+
+  &__menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1360px;
+      padding-top: 30px;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    width: 690px;
+    cursor: pointer;
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      width: 100%;
+    }
+
+    &-item {
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__burger {
+    &-icon {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    &-line {
+      border-radius: 2px;
+      width: 48px;
+      height: 1px;
+      background: $color-light;
+    }
+  }
+
+  &__headline {
+    width: 640px;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__sport-navigation {
+    background-color: $color-primary;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &-list {
+      display: flex;
+      gap: 50px;
+    }
+
+    &-item {
+      &:hover {
+        color: $color-dark;
+      }
+    }
+  }
+}
