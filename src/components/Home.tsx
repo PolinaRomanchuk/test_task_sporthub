@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import LatestNews from './LatestNews/LatestNews';
 import Special from './Special/Special';
 import Social from './Social/Social';
+import Promo from './Promo/Promo';
 
 type HomeProps = {
   size: number;
@@ -16,6 +17,7 @@ const Home = ({ size }: HomeProps): ReactElement => {
         <LatestNews />
         <Special />
         <Social />
+        <Promo />
       </main>
     </>
   );

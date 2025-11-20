@@ -1,0 +1,23 @@
+.promo {
+  &__content {
+    background: url('../../assets/promo/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 536px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 20px;
+  }
+  &__news {
+    width: 400px;
+  }
+}
