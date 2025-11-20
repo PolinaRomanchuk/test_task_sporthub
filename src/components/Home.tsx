@@ -1,5 +1,6 @@
 import type { ReactElement } from 'react';
 import Header from './Header/Header';
+import LatestNews from './LatestNews/LatestNews';
 
 type HomeProps = {
   size: number;
@@ -9,7 +10,9 @@ const Home = ({ size }: HomeProps): ReactElement => {
   return (
     <>
       <Header />
-      <main></main>
+      <main>
+        <LatestNews />
+      </main>
     </>
   );
 };

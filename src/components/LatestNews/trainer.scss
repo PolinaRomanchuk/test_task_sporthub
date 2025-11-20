@@ -1,0 +1,28 @@
+.trainer-card {
+  position: relative;
+  width: 300px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+
+  &__mark {
+    position: absolute;
+    z-index: 10;
+    left: 60px;
+  }
+
+  &__photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+  }
+  &__quote {
+    text-align: center;
+    height: 75px;
+  }
+}
