@@ -1,0 +1,53 @@
+@use '../../styles/variables' as *;
+
+.social {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    gap: 30px;
+  }
+
+  &__links {
+    width: 680px;
+    height: 180px;
+    background-color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  &__subscription {
+    width: 680px;
+    height: 180px;
+    background-color: $color-dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__input {
+    background-color: unset;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 380px;
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: $color-light;
+  }
+  &__button {
+    border-radius: 100px;
+    width: 201px;
+    height: 40px;
+    background: $color-primary;
+    color: $color-light;
+  }
+}
