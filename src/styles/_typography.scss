@@ -1,0 +1,138 @@
+@use './variables' as *;
+
+.text-xs-uppercase {
+  font-family: $font-family;
+  color: $color-light;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+
+.text-sm {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: $color-light;
+}
+
+.news-tag {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-dark;
+}
+
+.text-xs-muted {
+  font-family: $font-family;
+  font-weight: 300;
+  font-size: 12px;
+  color: $color-gray;
+}
+
+.text-md-uppercase {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-light;
+}
+
+.text-md-strong {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 16px;
+  color: $color-light;
+  opacity: 0.7;
+}
+
+.text-sm-light {
+  font-family: $font-family;
+  font-weight: 300;
+  font-size: 14px;
+  color: $color-light;
+}
+
+.text-xs-light {
+  font-family: $font-family;
+  font-weight: 300;
+  font-size: 12px;
+  color: $color-light;
+}
+
+.text-md-bold {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 16px;
+  color: $color-light;
+}
+
+.text-sm-expanded {
+  font-family: $font-family;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: $color-light;
+}
+
+.text-sm-soft {
+  font-family: $font-family;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: $color-light;
+}
+
+h1 {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 112%;
+  color: $color-light;
+}
+
+h2 {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 112%;
+  color: $color-light;
+}
+
+h3 {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 123%;
+  letter-spacing: -0.01em;
+  color: $color-title;
+}
+
+h4 {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: $color-dark;
+}
+
+h5 {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-dark;
+}
+
+h6 {
+  font-family: $font-family;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 125%;
+  color: $color-gray;
+}

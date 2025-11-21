@@ -23,7 +23,7 @@ const NewsCard = ({
       <img src={photo} alt="photo" className="card__image" />
       <div className="card__content">
         <div className="card__info">
-          <span className="card__date date">{date} |</span>
+          <span className="card__date text-xs-muted">{date} |</span>
           <h5 className="card__tag">#{tag}</h5>
         </div>
         <h3 className="card__title">{title}</h3>

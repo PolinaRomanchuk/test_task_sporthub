@@ -32,7 +32,7 @@ const Social = (): ReactElement => {
               <input
                 type="text"
                 placeholder="Введите ваш email"
-                className="social__input"
+                className="social__input text-sm-soft"
               />{' '}
               <button className="social__button">Подписаться</button>
             </div>

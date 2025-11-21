@@ -35,13 +35,8 @@
   }
   &__input {
     background-color: unset;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid $input-border-color-light;
     width: 380px;
-    font-family: $font-family;
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: $color-light;
   }
   &__button {
     border-radius: 100px;

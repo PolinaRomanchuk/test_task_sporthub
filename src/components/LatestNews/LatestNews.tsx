@@ -19,7 +19,7 @@ const LatestNews = (): ReactElement => {
           <div className="news__cards-list">
             {combinedNews.slice(0, 4).map((nw) => (
               <NewsCard
-                key={nw.id}
+                key={nw.id + Math.random()}
                 photo={nw.photo}
                 date={nw.date}
                 tag={nw.tag}

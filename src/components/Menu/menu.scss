@@ -83,18 +83,20 @@
     text-align: left !important;
   }
 
+  &__subscribe-form{
+    display: flex;
+    gap: 10px;
+  }
+
   &__input {
     width: 300px;
     height: 28px;
-
     border: none;
     background: unset;
     border-bottom: 1px solid $color-light;
-    color: $color-light;
-    font-family: $font-family;
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 0.02em;
+    &::placeholder {
+      color: $color-light;
+    }
   }
 
   &__button {

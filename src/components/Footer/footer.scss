@@ -16,10 +16,6 @@
   }
 
   &__ads {
-    font-family: $font-family;
-    font-weight: 600;
-    font-size: 16px;
-    color: $color-light;
     display: flex;
     flex-direction: column;
   }
@@ -27,27 +23,16 @@
     color: $color-light;
   }
 
-  
-
   &__copyright {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-     font-family: $font-family;
-    font-weight: 300;
-    font-size: 12px;
-    color: $color-light;
   }
 
   &__company {
     display: flex;
     align-items: center;
     gap: 10px;
-
-    font-family: $font-family;
-    font-weight: 300;
-    font-size: 12px;
-    color: $color-light;
   }
 }
