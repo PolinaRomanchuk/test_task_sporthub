@@ -19,5 +19,10 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+     @media (max-width: 640px) {
+      width: auto;
+      padding: 20px;
+    }
   }
 }

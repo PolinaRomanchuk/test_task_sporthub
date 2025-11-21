@@ -22,7 +22,10 @@ const Footer = (): ReactElement => {
               </span>
             </div>
           </div>
-          <SocialLinks />
+          <div className="footer__socials">
+            <SocialLinks />
+          </div>
+
           <div className="footer__copyright text-xs-light">
             <span className="footer__copyright-text">© 2022 «Спортхаб»</span>
             <div className="footer__company text-xs-light">

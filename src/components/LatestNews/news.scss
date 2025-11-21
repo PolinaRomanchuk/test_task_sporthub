@@ -16,6 +16,7 @@
      @media (max-width: 1200px) {
       margin: 40px 10px 40px 10px;
     }
+    
   }
   &__cards-list {
     display: grid;
@@ -27,6 +28,9 @@
     @media (max-width: 1200px) {
       width: auto;
     }
+    @media (max-width: 765px) {
+       grid-template-columns: 1fr;
+    }
   }
   &__trainers-list {
     display: grid;
@@ -37,6 +41,10 @@
 
      @media (max-width: 1450px) {
        grid-template-columns: 1fr 1fr;
+    }
+
+     @media (max-width: 625px) {
+       grid-template-columns: 1fr;
     }
   }
 }

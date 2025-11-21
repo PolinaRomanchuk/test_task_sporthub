@@ -19,8 +19,15 @@
     flex-direction: column;
     width: 600px;
     gap: 20px;
+    @media (max-width: 620px) {
+      width: auto;
+      padding: 20px;
+    }
   }
   &__news {
     width: 400px;
+    @media (max-width: 620px) {
+      width: auto;
+    }
   }
 }

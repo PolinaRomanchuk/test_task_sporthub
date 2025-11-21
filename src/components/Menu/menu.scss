@@ -45,6 +45,11 @@
     gap: 50px;
     margin: 50px;
     height: 280px;
+
+    @media (max-width: 470px) {
+      margin: 10px;
+      gap: 20px;
+    }
   }
 
   &__socials {
@@ -83,7 +88,7 @@
     text-align: left !important;
   }
 
-  &__subscribe-form{
+  &__subscribe-form {
     display: flex;
     gap: 10px;
   }

@@ -93,6 +93,9 @@ h1 {
   font-size: 40px;
   line-height: 112%;
   color: $color-light;
+  @media (max-width: 320px) {
+    font-size: 20px;
+  }
 }
 
 h2 {
@@ -101,6 +104,9 @@ h2 {
   font-size: 36px;
   line-height: 112%;
   color: $color-light;
+  @media (max-width: 640px) {
+    font-size: 20px;
+  }
 }
 
 h3 {
@@ -135,4 +141,7 @@ h6 {
   font-size: 20px;
   line-height: 125%;
   color: $color-gray;
+  @media (max-width: 640px) {
+    font-size: 14px;
+  }
 }
