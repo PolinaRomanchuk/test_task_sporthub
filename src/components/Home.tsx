@@ -4,6 +4,7 @@ import LatestNews from './LatestNews/LatestNews';
 import Special from './Special/Special';
 import Social from './Social/Social';
 import Promo from './Promo/Promo';
+import Footer from './Footer/Footer';
 
 type HomeProps = {
   size: number;
@@ -19,6 +20,7 @@ const Home = ({ size }: HomeProps): ReactElement => {
         <Social />
         <Promo />
       </main>
+      <Footer />
     </>
   );
 };
