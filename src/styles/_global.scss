@@ -65,7 +65,7 @@ h1 {
 }
 
 h2 {
-   font-family: $font-family;
+  font-family: $font-family;
   font-weight: 700;
   font-size: 36px;
   line-height: 112%;
@@ -103,4 +103,28 @@ h6 {
   font-size: 20px;
   line-height: 125%;
   color: $color-gray;
+}
+
+.font {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-light;
+}
+
+.font-menu {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 16px;
+  color: $color-light;
+  opacity: 0.7;
+}
+
+.font-ads{
+  font-family: $font-family;
+font-weight: 300;
+font-size: 14px;
+color: $color-light;
 }

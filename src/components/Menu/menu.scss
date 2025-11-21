@@ -1,0 +1,107 @@
+@use '../../styles/variables' as *;
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+
+  transform: translateX(100%);
+
+  &--open {
+    transform: translateX(0);
+  }
+
+  &__content {
+    background: $color-primary;
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__close {
+    background: $color-light;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px;
+    height: 280px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__ads {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__item {
+    text-align: left !important;
+  }
+
+  &__input {
+    width: 300px;
+    height: 28px;
+
+    border: none;
+    background: unset;
+    border-bottom: 1px solid $color-light;
+    color: $color-light;
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+
+  &__button {
+    border-radius: 100px;
+    width: 201px;
+    height: 40px;
+    background: $color-light;
+    color: $color-primary;
+  }
+}
