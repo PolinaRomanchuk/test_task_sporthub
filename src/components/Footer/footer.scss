@@ -18,6 +18,7 @@
   &__ads {
     display: flex;
     flex-direction: column;
+    gap: 5px;
   }
   &__nav {
     color: $color-light;

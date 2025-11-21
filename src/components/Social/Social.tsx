@@ -15,7 +15,7 @@ const Social = (): ReactElement => {
       <div className="_container">
         <div className="social__content">
           <div className="social__block">
-            <span className="news-tag">Соцсети</span>
+            <span className="text-lg-uppercase">Соцсети</span>
             <div className="social__links">
               <img src={VK} alt="vk" />
               <img src={Facebook} alt="Facebook" />
@@ -27,7 +27,7 @@ const Social = (): ReactElement => {
             </div>
           </div>
           <div className="social__block">
-            <span className="news-tag">Подписка</span>
+            <span className="text-lg-uppercase">Подписка</span>
             <div className="social__subscription">
               <input
                 type="text"

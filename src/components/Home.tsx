@@ -13,7 +13,7 @@ type HomeProps = {
 const Home = ({ size }: HomeProps): ReactElement => {
   return (
     <>
-      <Header />
+      <Header size={size} />
       <main>
         <LatestNews />
         <Special />

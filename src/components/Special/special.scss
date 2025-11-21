@@ -8,7 +8,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
+    @media (max-width: 768px) {
+      height: 276px;
+    }
   }
   &__text {
     padding-top: 100px;

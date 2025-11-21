@@ -12,7 +12,7 @@ const LatestNews = (): ReactElement => {
     <section className="news">
       <div className="_container">
         <div className="news__content">
-          <div className="news__tag news-tag">
+          <div className="news__tag text-lg-uppercase">
             <span>Последнее</span>
           </div>
 

@@ -9,7 +9,15 @@
 
 ._container {
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: map-get($container-max-widths, xl);
+
+  @media (max-width: map-get($container-max-widths, m)) {
+    max-width: map-get($container-max-widths, m);
+  }
+
+  @media (max-width: map-get($container-max-widths, s)) {
+    max-width: map-get($container-max-widths, s);
+  }
 }
 
 .wrapper {

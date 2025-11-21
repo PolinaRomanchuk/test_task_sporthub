@@ -5,7 +5,9 @@ import Menu from '../Menu/Menu';
 import { navigation } from '../../data/navigation';
 import { sport } from '../../data/sports';
 
-const Header = (): ReactElement => {
+type HeaderProps = { size: number };
+
+const Header = ({ size }: HeaderProps): ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   const onClose = () => {
     setIsOpen(false);
@@ -30,18 +32,18 @@ const Header = (): ReactElement => {
                         {item.name}
                       </li>
                     ))}
-                    <button
-                      className="header__burger"
-                      onClick={() => {
-                        setIsOpen((prev) => !prev);
-                      }}
-                    >
-                      <div className="header__burger-icon">
-                        <span className="header__burger-line"></span>
-                        <span className="header__burger-line"></span>
-                      </div>
-                    </button>
                   </ul>
+                  <button
+                    className="header__burger"
+                    onClick={() => {
+                      setIsOpen((prev) => !prev);
+                    }}
+                  >
+                    <div className="header__burger-icon">
+                      <span className="header__burger-line"></span>
+                      <span className="header__burger-line"></span>
+                    </div>
+                  </button>
                 </nav>
               </div>
               <div className="header__headline">
