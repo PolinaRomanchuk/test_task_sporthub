@@ -1,6 +1,10 @@
+@use '../../styles/variables' as *;
 .special {
   &__content {
-    background: url('../../assets/special/bg.png');
+    background:
+      linear-gradient($overlay-bg-dark, $overlay-bg-dark),
+      url('../../assets/special/bg.png');
+    background-blend-mode: hard-light;
     height: 536px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,7 +24,7 @@
     flex-direction: column;
     gap: 10px;
 
-     @media (max-width: 640px) {
+    @media (max-width: 640px) {
       width: auto;
       padding: 20px;
     }

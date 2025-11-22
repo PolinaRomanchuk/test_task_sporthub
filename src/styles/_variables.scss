@@ -1,10 +1,14 @@
-$color-primary: rgba(240, 27, 13, 1);
+$color-primary: rgba(192, 22, 10, 1);
 $color-light: #fff;
 $color-dark: rgba(0, 0, 0, 1);
 $color-gray: #828282;
 $color-title: rgba(31, 31, 31, 1);
 
 $input-border-color-light: rgba(255, 255, 255, 0.3);
+
+$overlay-bg-dark:rgba(63, 63, 63, 1);
+$gradient-card: linear-gradient(rgba(32, 32, 32, 1), rgba(57, 57, 57, 0.36));
+$gradient-header: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 
 $font-family: 'Roboto Flex', sans-serif;
 $second-family: 'Manrope', sans-serif;

@@ -1,6 +1,10 @@
+@use '../../styles/variables' as *;
+
 .promo {
   &__content {
-    background: url('../../assets/promo/bg.png');
+    background:
+      linear-gradient($overlay-bg-dark, $overlay-bg-dark),
+      url('../../assets/promo/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -9,6 +13,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-blend-mode: hard-light;
     @media (max-width: 768px) {
       height: 276px;
     }
