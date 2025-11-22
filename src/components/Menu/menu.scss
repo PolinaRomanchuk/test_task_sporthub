@@ -86,6 +86,10 @@
 
   &__item {
     text-align: left !important;
+    &:hover{
+      color: $color-dark;
+      cursor: pointer;
+    }
   }
 
   &__subscribe-form {
@@ -110,5 +114,11 @@
     height: 40px;
     background: $color-light;
     color: $color-primary;
+
+    &:hover {
+      background: $color-primary;
+      color: $color-light;
+      border: 1px solid $color-light;
+    }
   }
 }

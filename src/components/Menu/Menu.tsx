@@ -35,12 +35,11 @@ const Menu = ({ isOpen, onClose }: MenuProps): ReactElement => {
           <div className="menu__navigation">
             <nav className="menu__nav">
               <ul className="menu__list">
-                {navigation.map((nav) => (
-                  <li
-                    className="menu__item text-md-uppercase"
-                    key={nav.id + Math.random()}
-                  >
-                    {nav.name}
+                {navigation.map((nav, i) => (
+                  <li className="menu__item text-md-uppercase" key={i}>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                      {nav.name}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -48,19 +47,22 @@ const Menu = ({ isOpen, onClose }: MenuProps): ReactElement => {
 
             <nav className="menu__nav menu__nav--sports">
               <ul className="menu__list">
-                {sport.map((sp) => (
-                  <li
-                    className="menu__item text-sm"
-                    key={sp.id + Math.random()}
-                  >
-                    {sp.name}
+                {sport.map((sp, i) => (
+                  <li className="menu__item text-sm" key={i}>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                      {sp.name}
+                    </a>
                   </li>
                 ))}
               </ul>
             </nav>
             <nav className="menu__nav text-md-uppercase">
-              <span className="menu__section-link">О проекте</span>
-              <span className="menu__section-link">Обратная связь</span>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <span className="menu__item">О проекте</span>
+              </a>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <span className="menu__item">Обратная связь</span>
+              </a>
             </nav>
           </div>
           <div className="menu__socials">

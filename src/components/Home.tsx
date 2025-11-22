@@ -6,14 +6,10 @@ import Social from './Social/Social';
 import Promo from './Promo/Promo';
 import Footer from './Footer/Footer';
 
-type HomeProps = {
-  size: number;
-};
-
-const Home = ({ size }: HomeProps): ReactElement => {
+const Home = (): ReactElement => {
   return (
     <>
-      <Header size={size} />
+      <Header />
       <main>
         <LatestNews />
         <Special />

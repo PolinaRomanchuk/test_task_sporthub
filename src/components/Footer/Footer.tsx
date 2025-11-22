@@ -11,10 +11,14 @@ const Footer = (): ReactElement => {
         <div className="footer__content">
           <div className="footer__info">
             <img src={Logo} alt="logo" className="footer__logo" />
-            <span className="footer__nav text-lg-uppercase">О проекте </span>
-            <span className="footer__nav text-lg-uppercase">
-              Обратная связь
-            </span>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <span className="footer__nav text-lg-uppercase">О проекте </span>
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <span className="footer__nav text-lg-uppercase">
+                Обратная связь
+              </span>
+            </a>
             <div className="footer__ads ">
               <span className="footer__ads-label text-md-bold">Реклама:</span>
               <span className="footer__ads-contact text-xs-light">

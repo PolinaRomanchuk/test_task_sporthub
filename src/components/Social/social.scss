@@ -40,9 +40,19 @@
       align-content: center;
       width: 100%;
     }
+
+    &-icon {
+      &:hover {
+        path {
+          fill: $color-dark;
+        }
+
+        cursor: pointer;
+      }
+    }
   }
 
-  &__subscription {
+  &__form {
     width: 680px;
     height: 180px;
     background-color: $color-dark;
@@ -63,7 +73,7 @@
       width: 100%;
     }
   }
-  &__block {
+  &__section {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -86,5 +96,10 @@
     height: 40px;
     background: $color-primary;
     color: $color-light;
+
+    &:hover {
+      background: $color-light;
+      color: $color-primary;
+    }
   }
 }

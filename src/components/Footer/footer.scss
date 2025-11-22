@@ -33,6 +33,10 @@
   }
   &__nav {
     color: $color-light;
+    cursor: pointer;
+    &:hover{
+      color: $color-dark;
+    }
   }
 
   &__copyright {

@@ -5,9 +5,7 @@ import Menu from '../Menu/Menu';
 import { navigation } from '../../data/navigation';
 import { sport } from '../../data/sports';
 
-type HeaderProps = { size: number };
-
-const Header = ({ size }: HeaderProps): ReactElement => {
+const Header = (): ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   const onClose = () => {
     setIsOpen(false);
@@ -24,12 +22,14 @@ const Header = ({ size }: HeaderProps): ReactElement => {
                 </div>
                 <nav className="header__navigation">
                   <ul className="header__navigation-list">
-                    {navigation.map((item) => (
+                    {navigation.map((item, i) => (
                       <li
                         className="header__navigation-item text-xs-uppercase"
-                        key={item.id + Math.random()}
+                        key={i}
                       >
-                        {item.name}
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                          {item.name}
+                        </a>
                       </li>
                     ))}
                   </ul>
@@ -58,12 +58,11 @@ const Header = ({ size }: HeaderProps): ReactElement => {
 
             <nav className="header__sport-navigation">
               <ul className="header__sport-navigation-list">
-                {sport.map((item) => (
-                  <li
-                    className="header__sport-navigation-item text-sm"
-                    key={item.id + Math.random()}
-                  >
-                    {item.name}
+                {sport.map((item, i) => (
+                  <li className="header__sport-navigation-item text-sm" key={i}>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                      {item.name}
+                    </a>
                   </li>
                 ))}
               </ul>

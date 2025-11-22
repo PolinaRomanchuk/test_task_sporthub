@@ -17,9 +17,9 @@ const LatestNews = (): ReactElement => {
           </div>
 
           <div className="news__cards-list">
-            {combinedNews.slice(0, 4).map((nw) => (
+            {combinedNews.slice(0, 4).map((nw, i) => (
               <NewsCard
-                key={nw.id + Math.random()}
+                key={i}
                 photo={nw.photo}
                 date={nw.date}
                 tag={nw.tag}
@@ -42,9 +42,9 @@ const LatestNews = (): ReactElement => {
             ))}
           </div>
           <div className="news__cards-list news__cards-list--bottom">
-            {combinedNews.slice(4).map((nw) => (
+            {combinedNews.slice(4).map((nw, i) => (
               <NewsCard
-                key={nw.id + Math.random()}
+                key={i}
                 photo={nw.photo}
                 date={nw.date}
                 tag={nw.tag}
